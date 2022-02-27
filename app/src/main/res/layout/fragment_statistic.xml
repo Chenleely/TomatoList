@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/white_pressed"
     android:fitsSystemWindows="true"
-    tools:context="com.example.lulin.todolist.Activity.ScheduleActivity">
+    tools:context="com.example.zhihua.todolist.com.example.lulin.tomato.Activity.ScheduleActivity">
 
 
     <LinearLayout

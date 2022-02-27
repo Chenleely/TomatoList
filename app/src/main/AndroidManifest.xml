@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.lulin.todolist"
+    package="com.example.zhihua.todolist"
     android:versionCode="12"
     android:versionName="1.2.2">
     <!-- 自启动权限-->
@@ -40,7 +40,7 @@
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
-        android:name=".Widget.ClockApplication"
+        android:name="com.example.zhihua.tomato.Widget.ClockApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -50,7 +50,7 @@
 
         <provider
             android:name="cn.bmob.v3.util.BmobContentProvider"
-            android:authorities="com.example.lulin.todolist.BmobContentProvider">
+            android:authorities="com.example.zhihua.todolist.BmobContentProvider">
         </provider>
 
         <!-- 百度语音注册-->
@@ -68,7 +68,7 @@
             android:exported="false"/>
 
         <activity
-            android:name=".Activity.SplashActivity"
+            android:name="com.example.zhihua.tomato.Activity.SplashActivity"
             android:label="@string/app_name"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -78,17 +78,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.MainActivity"
+            android:name="com.example.zhihua.tomato.Activity.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.NewTodoActivity"
-            android:parentActivityName=".Activity.MainActivity"
+            android:name="com.example.zhihua.tomato.Activity.NewTodoActivity"
+            android:parentActivityName="com.example.zhihua.tomato.Activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Activity.EditTodoActivity" />
+        <activity android:name="com.example.zhihua.tomato.Activity.EditTodoActivity" />
 
-        <service android:name=".Service.AlarmService"
+        <service android:name="com.example.zhihua.tomato.Service.AlarmService"
                 android:process=":live">
             <intent-filter>
                 <action
@@ -98,25 +98,25 @@
         </service>
 
         <receiver
-            android:name=".Receiver.AlarmReceiver"
+            android:name="com.example.zhihua.tomato.Receiver.AlarmReceiver"
             android:enabled="true"
             android:exported="true"
             android:process=":remote" />
 
 
         <activity
-            android:name=".Activity.RegisterActivity"
+            android:name="com.example.zhihua.tomato.Activity.RegisterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.UserDataActivity"
+            android:name="com.example.zhihua.tomato.Activity.UserDataActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <service
-            android:name=".Service.FocusService"
+            android:name="com.example.zhihua.tomato.Service.FocusService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name=".Service.ClockService"
+            android:name="com.example.zhihua.tomato.Service.ClockService"
             android:enabled="true"
             android:exported="false">
         </service>
@@ -132,29 +132,29 @@
         </provider>
 
         <activity
-            android:name=".Activity.BasicActivity"
+            android:name="com.example.zhihua.tomato.Activity.BasicActivity"
             android:label="@string/title_activity_basic" />
         <activity
-            android:name=".Activity.SettingsActivity"
+            android:name="com.example.zhihua.tomato.Activity.SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name="com.example.zhihua.tomato.Activity.LoginActivity"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Activity.AboutActivity"
+            android:name="com.example.zhihua.tomato.Activity.AboutActivity"
             android:theme="@style/AppTheme.About" />
         <activity
-            android:name=".Activity.ClockActivity"
+            android:name="com.example.zhihua.tomato.Activity.ClockActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:launchMode="singleTask"
             android:excludeFromRecents="true"/>
         <activity
-        android:name=".Activity.ScheduleActivity"
+        android:name="com.example.zhihua.tomato.Activity.ScheduleActivity"
         android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
-            android:name=".Activity.NewClockActivity"
+            android:name="com.example.zhihua.tomato.Activity.NewClockActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
 
         <!-- Bmob云自动更新-->
@@ -164,7 +164,7 @@
         </activity>
 
         <!-- 监听系统广播自启动app-->
-        <receiver android:name=".Receiver.BootUpReceiver" >
+        <receiver android:name="com.example.zhihua.tomato.Receiver.BootUpReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />

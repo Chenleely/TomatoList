@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:focusable="true"
     android:focusableInTouchMode="true"
-    tools:context="com.example.lulin.todolist.Activity.NewTodoActivity">
+    tools:context="com.example.zhihua.todolist.com.example.lulin.tomato.Activity.NewTodoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
